@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Jorge Ramirez</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/styles.css" />
+
   </head>
 
   <body>
@@ -242,7 +244,7 @@
         lo mas pronto posible.
       </p>
       <div class="contact-content">
-        <form method="POST" data-netlify="true" name="contact" method="POST" data-netlify="true">
+        <form  method="POST" class="form">
           <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo">
           <input type="email" name="email" id="email" placeholder="Correo Electronico">
           <input type="number" name="numero" id="numero" placeholder="Número Telefónico">
@@ -258,5 +260,18 @@
       </div>
 
     </section>
+
+      <script defer src="/script.js/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "81LGyvFXhpF0vAVSH",
+        });
+      })();
+    </script>
   </body>
 </html>
