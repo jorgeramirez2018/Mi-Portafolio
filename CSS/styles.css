@@ -132,7 +132,7 @@ span {
 }
 
 .home-content p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -202,11 +202,38 @@ span {
 /*About*/
 
 .about {
-    background-color: #F2EFDF;
+
+    background-image: url(/recursos/rice-paper-3.png);
+    background-color: #8ba28b;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 7rem;
+}
+
+.about-content {
+    background-color: rgba(245, 246, 243, 0.614) ;
+    /* Fondo gris semitransparente */
+    border: 2px solid rgba(117, 117, 117, 0.3);
+    /* Borde blanco semitransparente */
+    border-radius: 1.5rem;
+    /* Esquinas redondeadas */
+    padding: 6rem 4rem;
+    /* Espaciado interno */
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+    backdrop-filter: blur(4px);
+    /* Efecto de desenfoque de fondo */
+    -webkit-backdrop-filter: blur(4px);
+    /* Compatibilidad con Safari */
+    /* Texto blanco para mejor contraste */
+    max-width: 900px;
+    /* Ancho máximo del contenedor */
+    margin: 4rem auto;
+    /* Centrado horizontal y margen vertical */
+    position: relative;
+    z-index: 2;
+    margin-bottom: 5rem;
 }
 
 .about .heading {
@@ -248,7 +275,9 @@ span {
 }
 
 .about-content h2 {
+    margin-top: 3rem;
     line-height: 1.2;
+    color: #23201e;
 }
 
 .about-content h3 {
@@ -257,6 +286,17 @@ span {
 
 .about-content p {
     margin: 2rem 0 3rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.item-skill {
+    margin-bottom: 2rem;
+
+}
+
+.color-icon {
+    color: #ffffff;
 }
 
 /*Skills*/
@@ -267,9 +307,6 @@ span {
     border-bottom: .2rem solid var(--main-color);
 }
 
-.services {
-    background-color: #bfccd6;
-}
 
 .content-skills {
     display: flex;
@@ -281,7 +318,7 @@ span {
 .item-skill span,
 .item-skill i {
     display: block;
-    color: var(--text-color);
+    color: #312f2f;
 }
 
 .item-skill {
@@ -296,7 +333,12 @@ span {
 /*Services*/
 
 .services h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+.services {
+    background-color: #862749;
+    background-image: url(/recursos/mocha-grunge.png);
 }
 
 .services-content {
@@ -314,6 +356,10 @@ span {
     border-radius: 2rem;
     box-shadow: 0 0 .5rem var(--other-color);
     transition: all .5s ease;
+}
+.heading-description{
+    color: #ffffff;
+    font-size: 6rem;
 }
 
 .service-item:hover {
@@ -360,7 +406,8 @@ span {
 /*Portafolio*/
 
 .portafolio {
-    background-color: #F2EFDF;
+    background-color: #8ba28b;
+    background-image: url(/recursos/rice-paper-3.png);
 }
 
 .portfolio-content {
@@ -410,6 +457,13 @@ span {
     margin-bottom: 1rem;
     line-height: 1.4;
 }
+.heading-description-porta{
+    color: #000;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
 
 .portfolio-header a {
     display: inline-flex;
@@ -433,7 +487,9 @@ span {
 /*Contacto*/
 
 .contact {
-    background-color: #bfccd6
+    background-color: #862749;
+    background-image: url(/recursos/mocha-grunge.png);
+    
 }
 
 .contact-content {
@@ -502,6 +558,13 @@ form input:focus,
 form textarea:focus {
     outline: none;
     box-shadow: 0 0.2rem 0.2rem -0.1rem var(--other-color);
+}
+
+.heading-contact{
+    text-align: center;
+    font-size: 4.5rem;
+    color: #ffffff;
+    margin-bottom: 5rem;
 }
 
 
@@ -1209,4 +1272,8 @@ span {
     .navbar.active {
         display: flex;
     }
+}
+
+.heading-description{
+    font-size: 2.5rem;
 }
