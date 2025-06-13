@@ -480,10 +480,15 @@ span {
     background-color: var(--text-color);
 }
 
-.portfolio-item p {
-    margin-bottom: 2rem;
+.portafolio-links {
+    display: inline-flex;
+    margin-top: 1rem;
+    margin-right: 0rem;
 }
 
+.portafolio-links i {
+    font-size: 3rem;
+    /* prueba 0.8rem o ajusta (0.9rem, 0.7rem según lo que busques) */ }
 /*Contacto*/
 
 .contact {
